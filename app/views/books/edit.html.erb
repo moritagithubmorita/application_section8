@@ -1,0 +1,8 @@
+
+
+<%= render partial: "form.html.erb", locals:{title: "Editing Book", book: @book, action: "Update Book"} %>
+<nav>
+  <label><%= link_to "Show", "/books/#{@book.id}" %></label>
+  <label> | </label>
+  <label><%= link_to "Back", "/books" %></label>
+</nav>

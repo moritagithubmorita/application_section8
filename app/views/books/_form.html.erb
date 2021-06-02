@@ -1,0 +1,12 @@
+<h2><%= title %></h2>
+<% if book.errors.any? %>
+  <%= render partial: "error.html.erb" %>
+<% end %>
+
+<%= form_with model: book, local: true do |f| %>
+  <h3>Title</h3>
+  <%= f.text_field :title %>
+  <h3>Body</h3>
+  <%= f.text_area :body %>
+  <%= f.submit action %>
+<% end %>

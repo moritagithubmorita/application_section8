@@ -1,0 +1,9 @@
+<section>
+  <p><%= pluralize(@book.errors.count, 'error') %> prohibited this book from being saved:</p>
+  <p>
+    <ul>
+      <% @book.errors.full_messages.each do |m| %>
+        <li><%= m %></li>
+      <% end %>
+  </p>
+</section>
