@@ -64,3 +64,20 @@ td{
 .notice{
   color: green;
 }
+
+.error-box{
+  margin: 0 0 15px 0;
+  border: 1px solid red;
+  background-color: #888888;
+}
+
+.error-title{
+  background-color: red;
+  color: white;
+  padding: 0 0 0 12px;
+  margin: 0;
+}
+
+.error-messages{
+  margin: 33px 33px 33px 66px;
+}

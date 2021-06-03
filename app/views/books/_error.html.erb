@@ -1,9 +1,8 @@
-<section>
-  <p><%= pluralize(@book.errors.count, 'error') %> prohibited this book from being saved:</p>
-  <p>
-    <ul>
-      <% @book.errors.full_messages.each do |m| %>
-        <li><%= m %></li>
-      <% end %>
-  </p>
+<section class="error-box">
+  <p class="error-title"><%= pluralize(@book.errors.count, 'error') %> prohibited this book from being saved:</p>
+  <ul class="error-messages">
+    <% @book.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
 </section>
