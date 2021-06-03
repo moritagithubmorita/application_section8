@@ -1,11 +1,13 @@
+<p class="notice">
 <%= notice %>
+</p>
 
-<section>
-  <p>
+<section class="show-area">
+  <p class="show-data">
     <strong>Title: </strong><%= @book.title %><br>
     <strong>Body: </strong><%= @book.body %>
   </p>
-  <nav>
+  <nav class="show-nav">
     <label><%= link_to "Edit", "/books/#{@book.id}/edit" %></label>
     <label> | </label>
     <label><%= link_to "Back", "/books" %></label>

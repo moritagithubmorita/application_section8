@@ -1,6 +1,11 @@
+<p class="notice">
 <%= notice %>
+</p>
+<p class="alert">
 <%= alert %>
+</p>
 
+<section class="table-area">
 <h1>Books</h1>
 <table>
   <thead>
@@ -22,5 +27,6 @@
     <% end %>
   </tbody>
 </table>
+</section>
 
 <%= render partial: "form.html.erb", locals:{title: "New Book", book: @book, action: "Create Book"} %>

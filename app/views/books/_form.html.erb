@@ -1,3 +1,4 @@
+<div class="form">
 <h2><%= title %></h2>
 <% if book.errors.any? %>
   <%= render partial: "error.html.erb" %>
@@ -5,8 +6,9 @@
 
 <%= form_with model: book, local: true do |f| %>
   <h3>Title</h3>
-  <%= f.text_field :title %>
+  <div class="text-field"><%= f.text_field :title %></div>
   <h3>Body</h3>
-  <%= f.text_area :body %>
+  <div class="text-area"><%= f.text_area :body %></div>
   <%= f.submit action %>
 <% end %>
+</div>
